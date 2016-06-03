@@ -9,6 +9,3 @@ var app = express();
 app.use('/authors', graphqlHTTP({ schema: authorSchema, pretty: true }));
 app.use('/articles', graphqlHTTP({ schema: articleSchema, pretty: true }));
 app.listen(3000);
-// express()
-//   .use('/graphql', graphqlHTTP({ schema: authorSchema, pretty: true }))
-//   .listen(3000);
